@@ -70,3 +70,5 @@ ahpgaussian(marine)
 # 10  model_2   0.3392280    2
 # 1   model_1   0.1464544    3
 ```
+References
+dos Santos, M, Costa, I. P. de A., & Gomes, C. F. S. (2021) Multicriteria decision-making in the selection of warships: a new approach to the ahp method. International Journal of the Analytic Hierarchy Process, 13(1). https://doi.org/10.13033/ijahp.v13i1.833
