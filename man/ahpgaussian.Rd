@@ -1,6 +1,6 @@
 \name{ahpgaussian}
 \alias{ahpgaussian}
-\title{New Multicriteria Method: AHP Gaussian}
+\title{New Multicriteria Method: AHPGaussian}
 
 \description{
 
@@ -40,7 +40,7 @@ ahpgaussian(x)
 ## Example 1
 ##
 
-ahpgaussian(marine)
+ahpgaussian(warships)
 
 }
 

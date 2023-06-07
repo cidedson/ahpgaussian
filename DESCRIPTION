@@ -1,6 +1,6 @@
-Package: ahpgaussian
+Package: AHPGaussian
 Type: Package
-Title: New Multicriteria Method: AHPGaussian
+Title: A new approach to the AHP method
 Version: 0.1
 Date: 2023-06-06
 Authors@R: c(person(given = "Cid Edson",
@@ -16,7 +16,7 @@ Authors@R: c(person(given = "Cid Edson",
 Maintainer: Cid Edson Povoas <cidedson@gmail.com>
 Depends: R (>= 3.6.0), stats
 Imports: reshape2
-Description: Implements the Analytic Hierarchy Process (AHP) method using Gaussian normalization to derive the relative weights of the criteria and alternatives. It also includes functions for visualizing the results and generating graphical outputs.
+Description: Implements the Analytic Hierarchy Process (AHP) method using Gaussian normalization to derive the relative weights of the criteria and alternatives. It also includes functions for visualizing the results and generating graphical outputs. Method as described in: dos Santos, M, Costa, I. P. de A., & Gomes, C. F. S. (2021) <doi.org/10.13033/ijahp.v13i1.833>.
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyLoad: yes
