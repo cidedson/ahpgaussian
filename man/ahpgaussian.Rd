@@ -21,6 +21,10 @@ ahpgaussian(x)
   \item{x}{A \code{data.frame} object.}
   }
 
+
+\value{Values are returned from the analysis with results and graphical output}
+
+
 \author{
   Cid Edson Povoas (\email{cidedson@gmail.com})\cr
 }

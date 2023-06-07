@@ -6,7 +6,8 @@
 #' @export
 #'
 
-ahpgaussian <- function(x) {
+ahpgaussian <- function(x) {stopifnot(is.data.frame(x))
+
   x2 <- reshape2::melt(x, id.vars = c(1,dim(x)[2]), measure.vars = -c(1, dim(x)[2]))
   x2$value <- ifelse(x2$min_max == "min", 1 / x2$value, x2$value)
   x2 <- transform(x2,sum = ave(value, criteria, FUN = sum))
