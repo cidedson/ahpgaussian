@@ -2,6 +2,8 @@
 
 <!-- badges: start -->
 
+[![CRAN status](https://www.r-pkg.org/badges/version/AHPGaussian)](https://CRAN.R-project.org/package=AHPGaussian)
+
 <!-- badges: end -->
 
 The AHPGaussian package provides functions for performing the Analytic Hierarchy Process (AHP) using a Gaussian-based approach. AHP is a widely used decision-making method that helps to prioritize alternatives based on a set of criteria. This package implements the AHP method using Gaussian normalization to derive the relative weights of the criteria and alternatives. It also includes functions for visualizing the AHP results and generating graphical outputs.

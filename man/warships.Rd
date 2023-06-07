@@ -13,9 +13,8 @@ A data.frame Decision Matrix of the data used Santos (2021), the first column li
 
 \references{
   dos Santos, M, Costa, I. P. de A., & Gomes, C. F. S. (2021)
-  Multicriteria decision-making in the selection of warships: a new approach to the ahp method.
-  \emph{International Journal of the Analytic Hierarchy Process}, 13(1).
-  https://doi.org/10.13033/ijahp.v13i1.833
+  Multicriteria decision-making in the selection of warships: a new approach to the ahp method. \emph{International Journal of the Analytic Hierarchy Process}, 13(1).
+  <doi:10.13033/ijahp.v13i1.833>.
 }
 
 
