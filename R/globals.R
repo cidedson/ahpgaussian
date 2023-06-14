@@ -1,1 +1,1 @@
-utils::globalVariables(c("value", "criteria"))
+utils::globalVariables(c("value", "criteria","new"))
