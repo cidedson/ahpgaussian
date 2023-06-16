@@ -1,6 +1,7 @@
-2023-07-01 vs. 0.1.2 - Cid Edson Povoas  <cidedson@gmail.com>
+2023-06-16 vs. 0.1.2 - Cid Edson Povoas  <cidedson@gmail.com>
   * Add plot.ahpgaussian method
   * The alias of the method plot.ahpgaussian in the documentation
+  * Add cellphones data.frame and documentation
 
 2023-06-15 vs. 0.1.1 - Cid Edson Povoas  <cidedson@gmail.com>
   * Add summary.ahpgaussian method

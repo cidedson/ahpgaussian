@@ -14,6 +14,8 @@ Authors@R: c(person(given = "Cid Edson",
        email = "marcosdossantos@ime.eb.br",
        comment = c(ORCID = "0000-0003-1533-5535")))
 Maintainer: Cid Edson Povoas <cidedson@gmail.com>
+URL: https://cidedson.github.io/ahpgaussian/
+BugReports: https://github.com/cidedson/ahpgaussian/issues
 Depends: R (>= 3.6.0), stats
 Imports: reshape2, methods
 Description: Implements the Analytic Hierarchy Process (AHP) method using Gaussian normalization (AHPGaussian) to derive the relative weights of the criteria and alternatives. It also includes functions for visualizing the results and generating graphical outputs. Method as described in: dos Santos, Marcos (2021) <doi:10.13033/ijahp.v13i1.833>.
@@ -25,4 +27,3 @@ RoxygenNote: 7.2.3
 Suggests: 
     spelling
 Language: en-US
-URL: https://cidedson.github.io/ahpgaussian/

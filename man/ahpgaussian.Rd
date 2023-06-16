@@ -43,8 +43,11 @@ ahpgaussian(x)
 ## Example 1
 ##
 
-ahpgaussian(warships)
+ws <- ahpgaussian(warships)
 
+summary(ws)
+
+plot(ws)
 
 }
 

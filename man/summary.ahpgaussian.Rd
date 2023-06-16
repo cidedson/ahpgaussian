@@ -44,8 +44,8 @@
 ## ahpgaussian
 ##
 # ahpgaussian
-ws <- ahpgaussian(warships)
-summary(ws)
+cp <- ahpgaussian(cellphones)
+summary(cp)
 }
 
 \keyword{ahpgaussian}
