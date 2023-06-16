@@ -1,0 +1,13 @@
+2023-07-01 vs. 0.1.2 - Cid Edson Povoas  <cidedson@gmail.com>
+  * Add plot.ahpgaussian method
+  * The alias of the method plot.ahpgaussian in the documentation
+
+2023-06-15 vs. 0.1.1 - Cid Edson Povoas  <cidedson@gmail.com>
+  * Add summary.ahpgaussian method
+  * The alias of the method summary.ahpgaussian in the documentation
+
+2023-06-14  vs. 0.1 - Cid Edson Povoas  <cidedson@gmail.com>
+  * Released to CRAN
+
+2023-03-01  vs. 0.0.1 - Cid Edson Povoas  <cidedson@gmail.com>
+  * Fisrt version restricted released (to testers only)

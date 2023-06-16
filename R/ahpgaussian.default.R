@@ -31,14 +31,14 @@ ahpgaussian.default <- function(x) {
     x5 <- x5[order(x5$variable), ]
     x5$rank <- 1
     x5$rank <- ave(x5$rank, FUN = cumsum)
-    text(x = barplot(x5$punctuation, names.arg = x5$variable, col = x5$variable,
-                     ylim = c(0, max(x5$punctuation) * 1.1)),
-         y = x5$punctuation,
-         labels = paste0(x5$rank),
-         pos = 3,
-         offset = 0.5)
+    # text(x = barplot(x5$punctuation, names.arg = x5$variable, col = x5$variable,
+    #                  ylim = c(0, max(x5$punctuation) * 1.1)),
+    #      y = x5$punctuation,
+    #      labels = paste0(x5$rank),
+    #      pos = 3,
+    #      offset = 0.5)
   results <- list(table1=x2,table2=x3,table3=x5)
-  class(results) <- c('ahpgaussian','list')
+  class(results) <- c('ahpgaussian','list',"plot")
   invisible(results)
 }
 

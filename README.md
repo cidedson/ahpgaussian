@@ -1,4 +1,4 @@
-# ahpgaussian
+# AHPGaussian
 
 <!-- badges: start -->
 
@@ -100,6 +100,10 @@ summary(ws)
 # 1   model_1   0.1464544    3
 ```
 
+
+```r
+plot(ws)
+```
 ![](man/figures/ahpgaussian-1.png)
 
 ## References
