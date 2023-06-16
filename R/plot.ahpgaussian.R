@@ -12,7 +12,7 @@ plot.ahpgaussian <- function(x, ...)
     stop("Use this function only with 'ahpgaussian' class!")
    text(x = barplot(x[[3]]$punctuation,
                     names.arg = x[[3]]$variable, col = x[[3]]$variable,
-                   ylim = c(0, max(x[[3]]$punctuation) * 1.1)),
+                   ylim = c(0, max(x[[3]]$punctuation) * 1.1), ...),
        y = x[[3]]$punctuation,
        labels = paste0(x[[3]]$rank),
        pos = 3,
