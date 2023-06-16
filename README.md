@@ -17,7 +17,6 @@ install.packages("AHPGaussian")
 # or
 # install.packages("devtools")
 devtools::install_github("cidedson/ahpgaussian")
-
 ```
 
 ## Example
@@ -25,7 +24,24 @@ devtools::install_github("cidedson/ahpgaussian")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(ahpgaussian)
+library(AHPGaussian)
+```
+
+``` r 
+data(warships)
+
+warships
+
+#           criteria model_1 model_2 model_3 min_max
+#1     Action Radius    4000    9330   10660     max
+#2    Fuel Endurance      11      26      30     max
+#3          Autonomy      30      25      35     max
+#4    Primary Cannon      25      25     120     max
+#5  Secondary Cannon       1       2       2     max
+#6      AAW Missiles       0       1       1     max
+#7      Initial Cost     290     310     310     min
+#8   Life Cycle Cost     592     633     633     min
+#9 Construction Time       6       8       8     min
 ```
 
 ``` r
@@ -83,5 +99,9 @@ summary(ws)
 # 10  model_2   0.3392280    2
 # 1   model_1   0.1464544    3
 ```
+
+![](man/figures/ahpgaussian-1.png)
+
 ## References
-dos Santos, M, Costa, I. P. de A., & Gomes, C. F. S. (2021) Multicriteria decision-making in the selection of warships: a new approach to the ahp method. International Journal of the Analytic Hierarchy Process, 13(1). https://doi.org/10.13033/ijahp.v13i1.833
+
+dos Santos, M, Costa, I. P. de A., & Gomes, C. F. S. (2021) Multicriteria decision-making in the selection of warships: a new approach to the ahp method. International Journal of the Analytic Hierarchy Process, 13(1). <https://doi.org/10.13033/ijahp.v13i1.833>
