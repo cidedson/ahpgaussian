@@ -29,11 +29,10 @@ ahpgaussian.default <- function(x) {
     x5$variable <- reorder(x5$variable, -x5$punctuation)
     x5 <- droplevels(unique(x5))
     x5 <- x5[order(x5$variable), ]
+    rownames(x5) <- 1:nrow(x5)
     x5$rank <- 1
     x5$rank <- ave(x5$rank, FUN = cumsum)
-  results <- list(table1=x2,table2=x3,table3=x5)
-  class(results) <- c('list','ahpgaussian','plot')
-  invisible(results)
+    results <- list(table1=x2,table2=x3,table3=x5)
+    class(results) <- c('list','ahpgaussian','plot')
+    invisible(results)
 }
-
-

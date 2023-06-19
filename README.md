@@ -75,8 +75,8 @@ summary(cp)
 # Table3 :
 #    variable punctuation rank
 # 1    Xiaomi   0.3703783    1
-# 6   Samsung   0.3533537    2
-# 11   iPhone   0.2762680    3
+# 2   Samsung   0.3533537    2
+# 3    iPhone   0.2762680    3
 ```
 
 

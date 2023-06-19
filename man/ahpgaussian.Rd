@@ -20,7 +20,7 @@ ahpgaussian(x)
 
 \arguments{
   \item{x}{A \code{data.frame} object.}
-  }
+}
 
 
 \value{Values are returned from the analysis with results and graphical output}
@@ -48,7 +48,6 @@ ws <- ahpgaussian(warships)
 summary(ws)
 
 plot(ws)
-
 }
 
 \keyword{ahp}
