@@ -45,7 +45,7 @@
 ##
 # ahpgaussian
 cp <- ahpgaussian(cellphones)
-summary(cp)
+summary(cp, TRUE)
 }
 
 \keyword{ahpgaussian}

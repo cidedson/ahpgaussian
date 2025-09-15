@@ -1,4 +1,6 @@
 AHP
+CMD
+Codecov
 Costa
 Edson
 Gomes
@@ -7,5 +9,9 @@ ahp
 ahpgaussian
 de
 doi
+dplyr
 formated
 ijahp
+magrittr
+tidyr
+tidyverse
