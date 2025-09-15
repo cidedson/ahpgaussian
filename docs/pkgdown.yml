@@ -1,8 +1,0 @@
-pandoc: 3.6.3
-pkgdown: 2.1.3
-pkgdown_sha: ~
-articles: {}
-last_built: 2025-09-15T18:46Z
-urls:
-  reference: https://cidedson.github.io/ahpgaussian/reference
-  article: https://cidedson.github.io/ahpgaussian/articles
