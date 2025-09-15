@@ -45,38 +45,44 @@ cp <- ahpgaussian(cellphones)
 ```
 
 ``` r
-summary(cp)
-# Table1 :
-#        criteria min_max variable        value          sum      norm      mean         sd    factor
+summary(cp, TRUE)
+#Summary of AHP Gaussian
+#
+#- Table1 (normalized data)
+#       criteria min_max variable        value          sum      norm      mean         sd    factor
 # 1         Price     min   Xiaomi 6.666667e-04 1.422222e-03 0.4687500 0.3333333 0.17140086 0.5142026
-# 2        Camera     max   Xiaomi 1.200000e+01 4.400000e+01 0.2727273 0.3333333 0.10497278 0.3149183
-# 3       Storage     max   Xiaomi 6.400000e+01 3.200000e+02 0.2000000 0.3333333 0.11547005 0.3464102
-# 4  Battery Life     max   Xiaomi 2.400000e+01 5.200000e+01 0.4615385 0.3333333 0.13507248 0.4052175
-# 5        Weight     min   Xiaomi 1.063830e-02 2.751864e-02 0.3865852 0.3333333 0.04628057 0.1388417
-# 6         Price     min  Samsung 5.555556e-04 1.422222e-03 0.3906250 0.3333333 0.17140086 0.5142026
-# 7        Camera     max  Samsung 1.200000e+01 4.400000e+01 0.2727273 0.3333333 0.10497278 0.3149183
+# 2         Price     min  Samsung 5.555556e-04 1.422222e-03 0.3906250 0.3333333 0.17140086 0.5142026
+# 3         Price     min   iPhone 2.000000e-04 1.422222e-03 0.1406250 0.3333333 0.17140086 0.5142026
+# 4        Camera     max   Xiaomi 1.200000e+01 4.400000e+01 0.2727273 0.3333333 0.10497278 0.3149183
+# 5        Camera     max  Samsung 1.200000e+01 4.400000e+01 0.2727273 0.3333333 0.10497278 0.3149183
+# 6        Camera     max   iPhone 2.000000e+01 4.400000e+01 0.4545455 0.3333333 0.10497278 0.3149183
+# 7       Storage     max   Xiaomi 6.400000e+01 3.200000e+02 0.2000000 0.3333333 0.11547005 0.3464102
 # 8       Storage     max  Samsung 1.280000e+02 3.200000e+02 0.4000000 0.3333333 0.11547005 0.3464102
-# 9  Battery Life     max  Samsung 1.800000e+01 5.200000e+01 0.3461538 0.3333333 0.13507248 0.4052175
-# 10       Weight     min  Samsung 8.333333e-03 2.751864e-02 0.3028250 0.3333333 0.04628057 0.1388417
-# 11        Price     min   iPhone 2.000000e-04 1.422222e-03 0.1406250 0.3333333 0.17140086 0.5142026
-# 12       Camera     max   iPhone 2.000000e+01 4.400000e+01 0.4545455 0.3333333 0.10497278 0.3149183
-# 13      Storage     max   iPhone 1.280000e+02 3.200000e+02 0.4000000 0.3333333 0.11547005 0.3464102
-# 14 Battery Life     max   iPhone 1.000000e+01 5.200000e+01 0.1923077 0.3333333 0.13507248 0.4052175
+# 9       Storage     max   iPhone 1.280000e+02 3.200000e+02 0.4000000 0.3333333 0.11547005 0.3464102
+# 10 Battery Life     max   Xiaomi 2.400000e+01 5.200000e+01 0.4615385 0.3333333 0.13507248 0.4052175
+# 11 Battery Life     max  Samsung 1.800000e+01 5.200000e+01 0.3461538 0.3333333 0.13507248 0.4052175
+# 12 Battery Life     max   iPhone 1.000000e+01 5.200000e+01 0.1923077 0.3333333 0.13507248 0.4052175
+# 13       Weight     min   Xiaomi 1.063830e-02 2.751864e-02 0.3865852 0.3333333 0.04628057 0.1388417
+# 14       Weight     min  Samsung 8.333333e-03 2.751864e-02 0.3028250 0.3333333 0.04628057 0.1388417
 # 15       Weight     min   iPhone 8.547009e-03 2.751864e-02 0.3105898 0.3333333 0.04628057 0.1388417
 # 
-# Table2 :
-#       criteria     factor
-# 1        Price 0.29902623
-# 2       Camera 0.18313568
-# 3      Storage 0.20144925
-# 4 Battery Life 0.23564768
-# 5       Weight 0.08074116
+# - Table2 (normalized factors)
+# # A tibble: 5 × 2
+#   criteria     factor
+#   <chr>         <dbl>
+# 1 Price        0.299 
+# 2 Camera       0.183 
+# 3 Storage      0.201 
+# 4 Battery Life 0.236 
+# 5 Weight       0.0807
 # 
-# Table3 :
-#    variable punctuation rank
-# 1    Xiaomi   0.3703783    1
-# 2   Samsung   0.3533537    2
-# 3    iPhone   0.2762680    3
+# - Table3 (final ranking)
+# # A tibble: 3 × 3
+#   variable punctuation  rank
+#   <chr>          <dbl> <int>
+# 1 Xiaomi         0.370     1
+# 2 Samsung        0.353     2
+# 3 iPhone         0.276     3
 ```
 
 
