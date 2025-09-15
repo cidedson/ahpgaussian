@@ -1,21 +1,25 @@
-#' @importFrom methods setRefClass new
-#' @importFrom reshape2 melt dcast
-#' @importFrom graphics barplot text
-#' @importFrom stats ave reorder sd
-#' @docType package
-#' @name plot.ahpgaussian
+#' @title Plot for ahpgaussian objects
+#' @description Create a bar plot with the scores and ranks from an AHP Gaussian analysis.
+#'
+#' @param x Object of class `ahpgaussian`.
+#' @param ... Additional arguments passed to ggplot2::geom_col.
+#'
+#' @return A ggplot2 object.
 #' @export
+#' @importFrom ggplot2 ggplot aes geom_col geom_text scale_fill_brewer theme_minimal
+plot.ahpgaussian <- function(x, ...) {
+  if (!inherits(x, "ahpgaussian")) {
+    stop("This function should only be used with objects of class 'ahpgaussian'.")
+  }
 
-plot.ahpgaussian <- function(x, ...)
-{
-  if (!inherits(x, 'ahpgaussian'))
-    stop("Use this function only with 'ahpgaussian' class!")
-   text(x = barplot(x[[3]]$punctuation,
-                    names.arg = x[[3]]$variable, col = x[[3]]$variable,
-                   ylim = c(0, max(x[[3]]$punctuation) * 1.1), ...),
-       y = x[[3]]$punctuation,
-       labels = paste0(x[[3]]$rank),
-       pos = 3,
-       offset = 0.5)
+  df <- x$table3
+  if (!all(c("variable", "punctuation", "rank") %in% names(df))) {
+    stop("Invalid ahpgaussian object: missing columns in table3.")
+  }
 
+  ggplot2::ggplot(df, ggplot2::aes(x = variable, y = punctuation, fill = variable)) +
+    ggplot2::geom_col(...) +
+    ggplot2::geom_text(ggplot2::aes(label = rank), vjust = -0.5) +
+    ggplot2::scale_fill_brewer(palette = "Set3") +
+    ggplot2::theme_minimal()
 }
